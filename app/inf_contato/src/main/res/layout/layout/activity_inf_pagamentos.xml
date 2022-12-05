@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".inf_pagamentos">
+
+    <ImageView
+        android:id="@+id/PIMlogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/PIMlogo"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="40dp"
+        android:text="Informações Sobre Pagamento"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/container"
+        style="@style/ContainerComponents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PIMlogo" />
+
+    <TextView
+        android:id="@+id/textcartao"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_margin="15dp"
+        android:text="Opção Cartão de Crédito"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        />
+
+
+    <RadioButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container" />
+
+    <TextView
+    android:id="@+id/textboleto"
+    android:layout_width="200dp"
+    android:layout_height="20dp"
+    android:layout_marginTop="315dp"
+    android:text="Opção Boleto Bancário"
+    android:textAlignment="center"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="@id/container"
+    app:layout_constraintStart_toStartOf="@id/container"
+    app:layout_constraintTop_toTopOf="@id/container"
+        />
+
+    <EditText
+        android:id="@+id/boleto"
+        style="@style/boleto"
+        android:layout_width="301dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:drawableRight="@drawable/ic_boleto"
+        android:hint="E-mail"
+        app:layout_constraintBottom_toBottomOf="@+id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@+id/textboleto" />
+
+
+    <RadioButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="304dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        app:layout_goneMarginTop="15dp" />
+
+    <EditText
+        android:id="@+id/cartao"
+        style="@style/cartao"
+        android:hint="Número Cartao"
+        android:drawableRight="@drawable/ic_card"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="490dp"
+        />
+
+    <EditText
+        android:id="@+id/validade"
+        style="@style/validade"
+        android:hint="Validade"
+        android:drawableRight="@drawable/ic_validade"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="430dp"
+        />
+
+    <EditText
+        android:id="@+id/codigovalidacao"
+        style="@style/validacao"
+        android:hint="CVC"
+        android:drawableRight="@drawable/ic_card"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="430dp"
+        />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_voltar_menu"
+        style="@style/button_voltar"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

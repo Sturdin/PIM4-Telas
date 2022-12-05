@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".inf_contato">
+
+    <ImageView
+        android:id="@+id/PIMlogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/PIMlogo"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="40dp"
+        android:text="Informações de Contato"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/container"
+        style="@style/ContainerComponents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PIMlogo" />
+
+    <TextView
+        android:id="@+id/telefone1"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:textSize="22sp"
+        android:text="Telefone 1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        />
+
+    <TextView
+        android:id="@+id/numtelefone1"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:textSize="22sp"
+        android:text="+55 11-1234-5678"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        />
+
+    <TextView
+        android:id="@+id/telefone2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:textSize="22sp"
+        android:text="Telefone 2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"/>
+
+    <TextView
+        android:id="@+id/numerotelefone2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="250dp"
+        android:textSize="22sp"
+        android:text="+55 11-91234-5678"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="350dp"
+        android:textSize="22sp"
+        android:text="Email de Contato"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"/>
+
+    <TextView
+        android:id="@+id/emailcontato"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="400dp"
+        android:textSize="22sp"
+        android:text="suportevida@topseguros.com.br"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_voltar_menu"
+        style="@style/button_voltar"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
